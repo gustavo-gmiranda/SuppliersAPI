@@ -11,7 +11,7 @@ using SuppliersAPI.Data;
 namespace SuppliersAPI.Migrations
 {
     [DbContext(typeof(SuppliersDbContext))]
-    [Migration("20250318015314_InitialCreate")]
+    [Migration("20250319004517_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -44,7 +44,7 @@ namespace SuppliersAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

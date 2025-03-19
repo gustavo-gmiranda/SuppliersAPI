@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SuppliersAPI.Models;
 
 namespace SuppliersAPI.Data
 {
@@ -7,5 +8,6 @@ namespace SuppliersAPI.Data
         public SuppliersDbContext(DbContextOptions<SuppliersDbContext> options) : base(options) { }
 
         public DbSet<SuppliersAPI.Models.Supplier> Suppliers { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
